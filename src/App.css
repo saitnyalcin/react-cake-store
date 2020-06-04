@@ -23,19 +23,20 @@
 .container {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
-.cake-image {
-  background-color: #fff;
+.cake-image > img {
+  width: 10em;
+  height: 10em;
 }
 
 .flex-container > div {
   display: flex;
   justify-content: center;
-  align-items: left;
+  align-items: center;
   flex-direction: column;
   width: 20em;
-  margin: 1em;
+  margin: 0.8em;
   border-radius: 10%;
 }
