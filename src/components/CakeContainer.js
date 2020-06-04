@@ -1,10 +1,30 @@
 import React from 'react';
+import ChocolateCake from '../images/cake.png';
+import CakeCardView from './CakeCardView';
 
 const CakeContainer = () => {
+  let stock = false;
+
   return (
-    <div>
-      <h1>Number of Cakes</h1>
-      <button>Buy Cake</button>
+    <div className="container">
+      <CakeCardView
+        cakeType="Chocolate"
+        cakeImage={ChocolateCake}
+        quantity="10"
+        stock={stock}
+      />
+      <CakeCardView
+        cakeType="Chocolate"
+        cakeImage={ChocolateCake}
+        quantity="10"
+        stock="available"
+      />
+      <CakeCardView
+        cakeType="Chocolate"
+        cakeImage={ChocolateCake}
+        quantity="10"
+        stock="available"
+      />
     </div>
   );
 };
