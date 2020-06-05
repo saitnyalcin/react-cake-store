@@ -1,10 +1,10 @@
 import React from 'react';
-import './App.css';
-import logo from '../src/images/steveCakeShop.png';
 import { Provider } from 'react-redux';
+import logo from '../src/images/steveCakeShop.png';
 import store from '../src/redux/store';
-
-import StoreContainer from './components/StoreContainer';
+import './App.css';
+import ChocolateContainer from './components/ChocolateContainer';
+import VanillaContainer from './components/VanillaContainer';
 
 function App() {
   return (
@@ -16,7 +16,8 @@ function App() {
           </div>
         </div>
         <div className="container">
-          <StoreContainer />
+          <ChocolateContainer />
+          <VanillaContainer />
         </div>
       </div>
     </Provider>

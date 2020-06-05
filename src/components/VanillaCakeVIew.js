@@ -1,8 +1,8 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
-import { buyCake } from '../redux';
+import { buyVanilla } from '../redux';
 
-const ChocolateCakeView = ({ cakeName, cakeImage, totalNumOfCakes }) => {
+const VanillaCakeVIew = ({ cakeName, cakeImage, totalNumOfCakes }) => {
   const dispatch = useDispatch();
   return (
     <div className="flex-container">
@@ -19,7 +19,7 @@ const ChocolateCakeView = ({ cakeName, cakeImage, totalNumOfCakes }) => {
       <div>
         {totalNumOfCakes > 0 ? (
           <button
-            onClick={() => dispatch(buyCake())}
+            onClick={() => dispatch(buyVanilla())}
             type="button"
             className="btn btn-success"
           >
@@ -35,4 +35,4 @@ const ChocolateCakeView = ({ cakeName, cakeImage, totalNumOfCakes }) => {
   );
 };
 
-export default ChocolateCakeView;
+export default VanillaCakeVIew;
