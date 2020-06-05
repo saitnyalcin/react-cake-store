@@ -7,7 +7,7 @@ const ChocolateContainer = () => {
   const chocolate = useSelector(
     state => state.chocolate.totalNumOfChocolateCakes
   );
-  const name = useSelector(state => state.name);
+  const name = useSelector(state => state.chocolate.name);
 
   return (
     <ChocolateCakeView

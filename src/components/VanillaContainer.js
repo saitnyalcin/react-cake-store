@@ -5,7 +5,7 @@ import VanillaCakeVIew from './VanillaCakeVIew';
 
 const VanillaContainer = () => {
   const vanilla = useSelector(state => state.vanilla.totalNumOfVanillaCakes);
-  const name = useSelector(state => state.name);
+  const name = useSelector(state => state.vanilla.name);
 
   return (
     <VanillaCakeVIew
