@@ -17,6 +17,9 @@ const ChocolateCakeView = ({ cakeName, cakeImage, totalNumOfCakes }) => {
         <h3>Quantity: {totalNumOfCakes}</h3>
       </div>
       <div>
+        <h3>$4.99</h3>
+      </div>
+      <div>
         {totalNumOfCakes > 0 ? (
           <button
             onClick={() => dispatch(buyCake())}
