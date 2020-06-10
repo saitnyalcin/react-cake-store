@@ -2,7 +2,7 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { buyVanilla } from '../redux';
 
-const VanillaCakeVIew = ({ cakeName, cakeImage, totalNumOfCakes }) => {
+const VanillaCakeVIew = ({ cakeName, cakeImage, totalNumOfCakes, price }) => {
   const dispatch = useDispatch();
   return (
     <div className="flex-container">
@@ -17,7 +17,7 @@ const VanillaCakeVIew = ({ cakeName, cakeImage, totalNumOfCakes }) => {
         <h3>Quantity: {totalNumOfCakes}</h3>
       </div>
       <div>
-        <h3>$4.99</h3>
+        <h3>${price}</h3>
       </div>
       <div>
         {totalNumOfCakes > 0 ? (

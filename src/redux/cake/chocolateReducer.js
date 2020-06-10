@@ -1,8 +1,10 @@
 import { BUY_CAKE } from './cakeTypes';
 
+// define the initial state of the action
 const initialChocolateState = {
   name: 'Chocolate',
-  totalNumOfChocolateCakes: 2
+  totalNumOfChocolateCakes: 2,
+  price: 5.99
 };
 
 const chocolateCakeReducer = (state = initialChocolateState, action) => {
@@ -11,7 +13,8 @@ const chocolateCakeReducer = (state = initialChocolateState, action) => {
       return {
         ...state,
         totalNumOfChocolateCakes: state.totalNumOfChocolateCakes - 1,
-        name: state.name
+        name: state.name,
+        price: state.price
       };
 
     default:
